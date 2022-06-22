@@ -1,18 +1,10 @@
-# Financial Planning
+# ELAN stock prediction
 
->In this Jupyter Lab, I am showing the analysis of the possibility of members to an emergency fund as well as the using the Monte Carlo simulations to create a financial planner for retirement.
 
-The financial analysis includs the following:
-    
-* Using Alpaca API call to aquire up to date data
-
-* Evaluating the emergency fund with created Pandas data frame
+Analysis includs the following:
 
 * Utilizing the MCForcastTools library to create a Monte Carlo simulation
 
-* Visualizing the simulation results and probability distribution of the simulation
-
-* Forcast the portfolio with a 95% confidence interval under different time frame
 ---
 
 ## Technologies
@@ -53,11 +45,6 @@ Before running the Jupyter notebook file, first, install the following dependenc
 
 The following calculations and visualizations are used in the file:
 
-* value of total stocks, bonds, and crypto currencies
-* portfolio composition as of 2022-04-12
-* emergency fund value
-* total portfolio worth
-* cumulative return of stocks and bonds
 * 95% confidence interval invenstment return estimation
 
 ## Contributors
