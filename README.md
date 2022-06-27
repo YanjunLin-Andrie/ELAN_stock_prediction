@@ -51,6 +51,8 @@ The following calculations and visualizations are used in the file:
 
 **UC Berkeley Extension**
 
+**https://www.analyticsvidhya.com/blog/2018/10/predicting-stock-price-machine-learningnd-deep-learning-techniques-python/**
+
 **Yanjun Lin Andrie**
 
 * yanjun.lin.andrie@gmail.com
