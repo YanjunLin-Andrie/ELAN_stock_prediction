@@ -1,67 +1,106 @@
 # ELAN stock prediction
 
+![header](pics/header.png)
+# Title
+**project** is a 
+---
+---
 
-Analysis includs the following:
+# **Link to the web application** click [here](http://)
 
-* Utilizing the MCForcastTools library to create a Monte Carlo simulation
+
+Content incudes:
+
+* [Technologies](#technologies)
+
+* [App Development](#app-development)
+
+* [App Demo](#app-demo)
+
+* [Contributors](#contributors)
 
 ---
 
 ## Technologies
-This project leverages python 3.7 with the following packages:
+>This project leverages python 3.7
 
-* [pandas](https://pandas.pydata.org/docs/getting_started/overview.html) - To read, calculate, analysis, visualize data
+* [Streamlit](https://streamlit.io/) - Deploy application into shareable web app
 
-* [pathlib](https://docs.python.org/3/library/pathlib.html) - For providing paths of files and directories
+* [Dataclasses](https://docs.python.org/3/library/dataclasses.html) - Use the decorator and functions to generate methods automatically
 
-* [numpy](https://numpy.org/doc/stable/user/absolute_beginners.html) - To perform mathmatical calculations (squareroot).
+* [Typing](https://docs.python.org/3/library/typing.html) - Provides runtime support for type hints
 
-* [alpaca_trade_api](https://github.com/alpacahq/alpaca-trade-api-python) - To import real time market data
+* [Datetime](https://docs.python.org/3/library/datetime.html) - Supplies classes for date and time manipulations
 
-* [os](https://docs.python.org/3/library/os.html) - Provides a portable way of using operating system dependent functionality
+* [Pandas](https://pandas.pydata.org/) - Data analysis and manipulation
 
-* [requests](https://www.w3schools.com/python/module_requests.asp) - To access data from another source
+* [Hashlib](https://docs.python.org/3/library/hashlib.html) - Implements a common interface to different secure hash and message digest algorithms
 
-* [json](https://pypi.org/project/jsonlib/)- To translate JavaScript data to Python
-
-* [dotenv](https://pypi.org/project/python-dotenv/)- To load environment variables
 ---
 
-## Installation Guide
+## App Development
+Create 3 dataclasses: 
+* Class Record: defines inpute data and its type
+* Class Block: process and encode inpute data to create a hash for blocks
+* Class PyChain: defines difficulties, add each block, and validate the entire blockchain
 
-Before running the Jupyter notebook file, first, install the following dependencies in Terminal or Bash.
+Streamlit deployemt:
+Designs and deploy app application
+
+---
+
+## App Demo
+
+Go to the file folder contains pychian.py file and 
+
+**Run application using command line** under the virtual environment contains all necessary dependencies
 
 ```python
-  pip install pandas
-  pip install pathlib
-  pip install numpy
-  pip install alpaca_trade_api
-  pip install json
+streamlit run pychain.py
 ```
+
+![commandline](pics/commandline.png)
 
 ---
 
-## Calculations and Visualizations
 
-The following calculations and visualizations are used in the file:
+**Input Data and add to blockchain**
 
-* 95% confidence interval invenstment return estimation
+![1](pics/1.png)
+
+---
+
+**Record each transaction**
+
+As the Block Difficulty increased from 2 to 4, it took the nonce increased significantly.
+
+![2](pics/2.png)
+![3](pics/3.png)
+
+---
+**Block Inspector displays selected block information**
+
+![4](pics/4.png)
+
+---
+
+**Chain validation shows the blockchain is safe and trustworthy**
+
+![5](pics/5.png)
+
+---
+
 
 ## Contributors
 
+**Yanjun Lin Andrie** <span>&nbsp;&nbsp;</span> |
+<span>&nbsp;&nbsp;</span> email: yanjun.lin.andrie@gmail.com <span>&nbsp;&nbsp;</span>|
+<span>&nbsp;&nbsp;</span> [<img src="pics/linkedin.png" alt="in" width="20"/>](https://www.linkedin.com/in/yanjun-linked/)
+
 **UC Berkeley Extension**
-
-**https://www.analyticsvidhya.com/blog/2018/10/predicting-stock-price-machine-learningnd-deep-learning-techniques-python/**
-
-**Yanjun Lin Andrie**
-
-* yanjun.lin.andrie@gmail.com
-
-* https://www.linkedin.com/in/yanjun-linked
 
 ---
 
 ## License
 
-MIT
- 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
