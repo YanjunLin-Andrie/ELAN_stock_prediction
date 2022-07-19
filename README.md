@@ -1,95 +1,77 @@
-# ELAN stock prediction
-
 ![header](pics/header.png)
-# Title
-**project** is a 
+# ELAN Stock Prediction
+**This project** compares, evaluates, and predicts ELAN stock price using Monte Carlo Simulation, FB Prophet, SMA, k-Nearest Neighbors, Arima, LSTM, and EMA.
 ---
 ---
-
-# **Link to the web application** click [here](http://)
-
 
 Content incudes:
 
 * [Technologies](#technologies)
 
-* [App Development](#app-development)
+* [Approaches](#approaches)
 
-* [App Demo](#app-demo)
+* [Results](#results)
 
 * [Contributors](#contributors)
 
 ---
 
 ## Technologies
+Include but not limited to the following:
 >This project leverages python 3.7
 
-* [Streamlit](https://streamlit.io/) - Deploy application into shareable web app
+* [Alpaca API](https://alpaca.markets/docs/) - Collect live stock information
 
-* [Dataclasses](https://docs.python.org/3/library/dataclasses.html) - Use the decorator and functions to generate methods automatically
+* [Monte Carlo Forecast Tools](https://www.palisade.com/monte-carlo-simulation/) - Visualize all possiblities
 
-* [Typing](https://docs.python.org/3/library/typing.html) - Provides runtime support for type hints
+* [Prophet](https://pypi.org/project/fbprophet/) - Time series forcasting
 
-* [Datetime](https://docs.python.org/3/library/datetime.html) - Supplies classes for date and time manipulations
+* [Google Colab](https://colab.research.google.com/?utm_source=scs-index) - Jupyter Notebook function in browser
 
 * [Pandas](https://pandas.pydata.org/) - Data analysis and manipulation
 
-* [Hashlib](https://docs.python.org/3/library/hashlib.html) - Implements a common interface to different secure hash and message digest algorithms
+* [Scikit-learn](https://scikit-learn.org) - Supplies machine learning libraries for Python
+
+* [Keras](https://keras.io) - Provides deep learning API for Python interface
+
+* [Yahoo Finance](https://pypi.org/project/yahoo-finance/) - Aquire stock data from Yahoo! Finance
+
+* [Tensorflow](https://www.tensorflow.org) - Supplies machine learning libraries for Python
 
 ---
 
-## App Development
-Create 3 dataclasses: 
-* Class Record: defines inpute data and its type
-* Class Block: process and encode inpute data to create a hash for blocks
-* Class PyChain: defines difficulties, add each block, and validate the entire blockchain
-
-Streamlit deployemt:
-Designs and deploy app application
-
----
-
-## App Demo
-
-Go to the file folder contains pychian.py file and 
-
-**Run application using command line** under the virtual environment contains all necessary dependencies
-
-```python
-streamlit run pychain.py
-```
-
-![commandline](pics/commandline.png)
+## Approaches
+* Comparing ELAN and LLY performance
+* Predict ELAN cumulative returns
+* Explore Machine Learning models:
+    * Simple Moving Average (SMA)
+    * k-Nearest Neighbor
+    * Auto ARIMA
+    * Long Short Term Memory (LSTM)
+* Perform future price predictions with the best model (LSTM):
+    * Predict future 300 days price using historical daily closing price
+    * Predict future 56 weeks performance using historical weekly average closing price
 
 ---
 
+## Results
+LSTM machine learning model performs the best among all explored models, thus, future predictions will be performed on LSTM model.
 
-**Input Data and add to blockchain**
+![lstm](pics/lstm.png)
 
-![1](pics/1.png)
 
+### **Historical daily closing price visualization**
+![ori](pics/ori.png)
 ---
-
-**Record each transaction**
-
-As the Block Difficulty increased from 2 to 4, it took the nonce increased significantly.
-
-![2](pics/2.png)
-![3](pics/3.png)
-
 ---
-**Block Inspector displays selected block information**
-
-![4](pics/4.png)
-
+### **Future 300 days prediction using daily closing price**
+![300](pics/300.png)
 ---
-
-**Chain validation shows the blockchain is safe and trustworthy**
-
-![5](pics/5.png)
-
 ---
-
+### **Future 56 weeks prediction using weekly average closing price**
+![week](pics/week.png)
+---
+---
 
 ## Contributors
 
